@@ -18,95 +18,97 @@
     under the License.
 -->
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
-    
+
     <title>Register</title>
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    
+
     <script src="js/jquery-1.11.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-  </head>
-  <body>
-    <div data-role="page">
-      <div data-role="header">
-	<h1>Migraña App</h1>
-      </div>
-      <div class="ui-content" role="main">
-	<h2>Por favor registre los datos de su migraña</h2>
-	<form method="post">
-	  <fieldset>
-	    <label for="date">Date: </label>
-	    <input type="date" name="date" id="date">
-	    <br />
-	    
-	    <label for="time">Time: </label>
-	    <input type="time" data-clear-btn="false" name="time" id="time" value="">
-	    <br />
-	    
-	    <label for="intensidad">Intensidad del Dolor:</label>
-	    <input type="range" name="intensidad" id="intensidad" min="0" max="10" step="1" value="5">
-	    <br />
-	    
-	    <label for="localizacion">Localizacion:</label>
-	    <select name="localization" id="localizacion">
-	      <option value="1">Frontal</option>
-	      <option value="2">Posterior</option>
-	      <option value="3">Derecha</option>
-	      <option value="4">Izquierda</option>
-	    </select>
-	    
-	    <br />
-	    
-	    <label for="medicament">Medicamento Tomado:</label>
-	    <input type="text" name="medicament" id="medicament">
-	    <br />
-	    
-	    <label for="sleep-hours">Horas Dormidas</label>
-	    <input id="sleep-hours" type="number" data-clear-btn="false" name="sleep-hours" pattern="[0-24]*" id="number-3">
-	    <br />
-	    
-	    <label for="activity">Actividad Presente:</label>
-	    <select name="activity" id="activity" data-mini="true">
-	      <option value="1">Trabajo</option>
-	      <option value="2">Ejercicio</option>
-	      <option value="3">Descanso</option>
-	    </select>
-	    <br />
-	    
-	  </fieldset>
-	  <fieldset data-role="controlgroup" data-type="horizontal">
-	    <legend>Alimentos Consumidos:</legend>
-	    <label for="meat">Carne</label>
-	    <input id="meat" type="checkbox" name="meat">
-	    <label for="vegetables">Vegetales</label>
-	    <input id="vegetables" type="checkbox" name="vegetables">
-	    <label for="fat">Grasas</label>
-	    <input id="fat" type="checkbox" name="fat">
-	    <label for="fruits">Frutas</label>
-	    <input id="fruits" type="checkbox" name="fruits">
-	    <label for="sweet-beverages">Bebidas Dulces</label>
-	    <input id="sweet-beverages" type="checkbox" name="sweet-beverages">
-	    <label for="dark-beverages">Bebidas Oscuras</label>
-	    <input id="dark-beverages" type="checkbox" name="dark-beverages">
-	  </fieldset>
-	  <br />
-	  
-	  <button type="submit" id="submit" class="ui-shadow ui-btn ui-corner-all ui-mini">Submit</button>
-	</form>
-	
-      </div>
-      
-      
-      <hr />
-      <p>Already a user? <a href="login.html">Login</a></p>
-      <p>Not a user? <a href="index.html">Sign up</a></p>
-      
-  </body>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <h1>Migraña App</h1>
+    </div>
+    <div class="ui-content" role="main">
+        <h2>Por favor registre los datos de su migraña</h2>
+        <form method="post">
+            <fieldset>
+                <label for="date">Date: </label>
+                <input type="date" name="date" id="date">
+                <br/>
+
+                <label for="time">Time: </label>
+                <input type="time" data-clear-btn="false" name="time" id="time" value="">
+                <br/>
+
+                <label for="intensidad">Intensidad del Dolor:</label>
+                <input type="range" name="intensidad" id="intensidad" min="0" max="10" step="1" value="5">
+                <br/>
+
+                <label for="localizacion">Localizacion:</label>
+                <select name="localization" id="localizacion">
+                    <option value="1">Frontal</option>
+                    <option value="2">Posterior</option>
+                    <option value="3">Derecha</option>
+                    <option value="4">Izquierda</option>
+                </select>
+
+                <br/>
+
+                <label for="medicament">Medicamento Tomado:</label>
+                <input type="text" name="medicament" id="medicament">
+                <br/>
+
+                <label for="sleep-hours">Horas Dormidas</label>
+                <input id="sleep-hours" type="number" data-clear-btn="false" name="sleep-hours" pattern="[0-24]*"
+                       id="number-3">
+                <br/>
+
+                <label for="activity">Actividad Presente:</label>
+                <select name="activity" id="activity" data-mini="true">
+                    <option value="1">Trabajo</option>
+                    <option value="2">Ejercicio</option>
+                    <option value="3">Descanso</option>
+                </select>
+                <br/>
+
+            </fieldset>
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>Alimentos Consumidos:</legend>
+                <label for="meat">Carne</label>
+                <input id="meat" type="checkbox" name="meat">
+                <label for="vegetables">Vegetales</label>
+                <input id="vegetables" type="checkbox" name="vegetables">
+                <label for="fat">Grasas</label>
+                <input id="fat" type="checkbox" name="fat">
+                <label for="fruits">Frutas</label>
+                <input id="fruits" type="checkbox" name="fruits">
+                <label for="sweet-beverages">Bebidas Dulces</label>
+                <input id="sweet-beverages" type="checkbox" name="sweet-beverages">
+                <label for="dark-beverages">Bebidas Oscuras</label>
+                <input id="dark-beverages" type="checkbox" name="dark-beverages">
+            </fieldset>
+            <br/>
+
+            <button type="submit" id="submit" class="ui-shadow ui-btn ui-corner-all ui-mini">Submit</button>
+        </form>
+
+    </div>
+
+
+    <hr/>
+    <p>Already a user? <a href="login.html">Login</a></p>
+    <p>Not a user? <a href="index.html">Sign up</a></p>
+</div>
+</body>
 </html>
