@@ -14,6 +14,7 @@
     <script src="./js/jquery-1.11.1.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="./js/registro.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript">
 			app.initialize();
@@ -27,7 +28,7 @@
 
     <div class="ui-content" role="main">
         <h2>Por favor registre los datos de su migraña</h2>
-        <form method="post">
+        <form id="registro" data-ajax="false" method="post">
             <fieldset>
                 <label for="date">Date: </label>
                 <input type="date" name="date" id="date">
@@ -51,8 +52,8 @@
 
                 <br/>
 
-                <label for="medicament">Medicamento Tomado:</label>
-                <input type="text" name="medicament" id="medicament">
+                <label for="medicamento">Medicamento Tomado:</label>
+                <input type="text" name="medicamento" id="medicamento">
                 <br/>
 
                 <label for="sleep-hours">Horas Dormidas</label>
@@ -69,7 +70,7 @@
                 <br/>
 
             </fieldset>
-            <fieldset data-role="controlgroup" data-type="horizontal">
+            <fieldset data-role="controlgroup" data-type="vertical">
                 <legend>Alimentos Consumidos:</legend>
                 <label for="meat">Carne</label>
                 <input id="meat" type="checkbox" name="meat">
