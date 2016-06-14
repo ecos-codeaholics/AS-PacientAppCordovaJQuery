@@ -22,39 +22,45 @@
 </head>
 <body>
 <div data-role="page">
-    <div data-role="header">
+    <div data-role="header" data-theme="b">
         <h1>Sign up</h1>
     </div>
 
-    <p>Already a user? <a href="login.html">Login</a></p>
+    <div role="main" class="ui-content">
+        <p>Already a user? <a href="login.html">Login</a></p>
 
-    <form class="pure-form pure-form-stacked" method="post">
-        <fieldset>
-            <legend>
-                Please provide your information to register to the app
-            </legend>
-            <br>
-            <label for="text-1">Name:</label>
-            <input type="text" name="text-1" id="text-1" value="">
-            <br>
-            <label for="last-name">Last name</label>
-            <input id="last-name" type="text" placeholder="Last name" name="last-name">
-            <br>
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Email" name="email">
-            <br>
-            <label for="password">Password</label>
-            <input id="password" type="password" placeholder="Password" name="password">
-            <br>
-            <label for="remember" class="pure-checkbox">
-                <input id="remember" type="checkbox"> I've read the terms and conditions
-            </label>
-            <br>
-            <button type="submit" class="pure-button pure-button-primary">Submit</button>
-        </fieldset>
-    </form>
-    <br>
-    <p>Do you have a pain <a href="registro.html"> Register It</a></p>
+        <form class="pure-form pure-form-stacked" method="post">
+            <fieldset>
+                <legend>
+                    Please provide your information to register to the app
+                </legend>
+                <br>
+                <label for="text-1">Name:</label>
+                <input type="text" name="text-1" id="text-1" value="">
+                <br>
+                <label for="last-name">Last name</label>
+                <input id="last-name" type="text" placeholder="Last name" name="last-name">
+                <br>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" name="email">
+                <br>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password" name="password">
+                <br>
+                <label for="remember" class="pure-checkbox">
+                    <input id="remember" type="checkbox"> I've read the terms and conditions
+                </label>
+                <br>
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </fieldset>
+        </form>
+        <br>
+        <p>Do you have a pain <a href="registro.html"> Register It</a></p>
+    </div>
+    <div data-role="footer" data-theme="b">
+        <h1>Codeaholics</h1>
+    </div>
+
 </div>
 
 </body>

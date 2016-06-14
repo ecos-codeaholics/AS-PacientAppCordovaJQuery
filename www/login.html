@@ -24,33 +24,38 @@
 </head>
 <body>
 <div data-role="page">
-    <div data-role="header">
+    <div data-role="header" data-theme="b">
         <h1>Log in</h1>
     </div>
 
-    <p>Not a user? <a href="index.html">Sign up</a></p>
+    <div data-role="main" class="ui-content">
+        <p>Not a user? <a href="index.html">Sign up</a></p>
 
-    <form class="pure-form pure-form-stacked">
-        <fieldset>
-            <legend>
-                Please provide your email and password to access the app
-            </legend>
-            <br>
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Email">
-            <br>
-            <label for="password">Password</label>
-            <input id="password" type="password" placeholder="Password">
-            <br>
-            <label for="remember" class="pure-checkbox">
-                <input id="remember" type="checkbox"> Remember me
-            </label>
-            <br>
-            <button type="submit" class="pure-button pure-button-primary">Login</button>
-        </fieldset>
-    </form>
-    <br>
-    <p>Do you have a pain <a href="registro.html"> Register It</a></p>
+        <form class="pure-form pure-form-stacked">
+            <fieldset>
+                <legend>
+                    Please provide your email and password to access the app
+                </legend>
+                <br>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email">
+                <br>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password">
+                <br>
+                <label for="remember" class="pure-checkbox">
+                    <input id="remember" type="checkbox"> Remember me
+                </label>
+                <br>
+                <button type="submit" class="pure-button pure-button-primary">Login</button>
+            </fieldset>
+        </form>
+        <br>
+        <p>Do you have a pain <a href="registro.html"> Register It</a></p>
+    </div>
+    <div data-role="footer" data-theme="b">
+        <h1>Codeaholics</h1>
+    </div>
 
 </div>
 </body>
